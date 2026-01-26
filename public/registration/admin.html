@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin — Registered Users</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="admin-page">
+  <!-- animated background -->
+  <div class="sky">
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+  </div>
+
+  <main class="center-wrap admin-wrap">
+    <section class="card admin-card">
+      <div class="admin-header">
+        <h2>Registered Users</h2>
+        <div class="admin-actions">
+          <button id="clearAll" class="btn danger">🧹 Clear All</button>
+          <a href="register.html" class="btn ghost">+ New Register</a>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table id="usersTable" class="users-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Country</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- rows injected by script.js -->
+          </tbody>
+        </table>
+      </div>
+
+      <div id="noData" class="no-data">No registered users yet.</div>
+    </section>
+  </main>
+
+  <script src="/registration/script.js"></script>
+</body>
+</html>

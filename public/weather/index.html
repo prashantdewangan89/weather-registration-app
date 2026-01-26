@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animated Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background clouds & stars -->
+  <div class="sky">
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+  </div>
+
+  <div class="card fade-in">
+    <h2>🌤️ Weather App</h2>
+
+    <div class="input-box">
+      <input type="text" id="city" placeholder="Enter city name" />
+      <button id="getWeatherBtn">Get Weather</button>
+    </div>
+
+    <div class="temp" id="temp">--°C</div>
+    <div class="desc" id="condition">Condition</div>
+
+    <div class="details">
+      <p id="humidity">💧 Humidity: --%</p>
+      <p id="wind">🌬️ Wind: -- m/s</p>
+    </div>
+
+    <h3>Next 24 Hours Forecast</h3>
+    <div class="forecast" id="forecast"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
